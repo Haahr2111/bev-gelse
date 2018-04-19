@@ -1,0 +1,169 @@
+/*Global*/
+
+html {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    color: white;
+}
+
+
+header {
+    margin: 0, 0, 0;
+    background-color: white;
+    margin: -8px;
+}
+
+picture img {
+    width: 100%;
+    position: relative;
+    right: 1px;
+    margin-bottom: -4px;
+
+}
+
+.logo {
+    width: 45%;
+    margin: 10px;
+    position: relative;
+    left: 25%;
+    top: 1px;
+
+
+
+}
+
+
+
+label {
+    font-size: 55px;
+    margin: 20px;
+    display: block;
+    width: 20px;
+    color: #f56c20;
+    position: absolute;
+    top: 1px;
+    right: 1%;
+    padding-right: 5%;
+
+
+
+
+}
+
+label {
+    cursor: default;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: inline-block;
+}
+
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.menu a {
+    text-decoration-line: none;
+    color: white;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    border-style: ridge;
+    background-color: #f88804;
+    padding: 10px;
+}
+
+body {
+    background-color: #f88804;
+}
+
+section {
+
+    background-color: #f56c20;
+}
+
+#klatrer ul li {
+    list-style-type: none;
+}
+
+/*tablet*/
+
+@media (min-width:768px) {
+
+    .logo {
+        width: 35%;
+        left: 30%
+    }
+    label {
+        font-size: 100px;
+        width: 50px;
+    }
+    .menu {
+        width: 100%;
+
+    }
+    .menu a {
+        font-size: 60px;
+        padding: 15px;
+
+    }
+}
+
+/*laptop*/
+
+@media(min-width: 1025px) {
+
+    label {
+        display: none;
+
+    }
+    #toggle {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        background-color: #f88804;
+
+
+    }
+
+    .menu a {
+        display: inline;
+        border-style: none;
+        font-size: 25px;
+        text-align: center;
+        background-color: #f88804;
+        padding-top: 0px;
+
+    }
+
+    .logo {
+        width: 15%;
+        position: inherit;
+    }
+
+    picture img {
+        width: 40%;
+        position: relative;
+        left: 40%;
+    }
+}

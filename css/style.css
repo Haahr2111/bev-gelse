@@ -12,16 +12,65 @@ h1,
 h2,
 h3,
 h4,
+ol li {
+    color: darkred;
+}
+
 p,
 a {
     color: white;
 }
 
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+ul li {
+    color: white;
+}
+
+p,
+a,
+li {
+    font-size: 25px;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h1 {
+
+    font-size: 60px;
+}
 
 header {
     margin: 0, 0, 0;
     background-color: white;
     margin: -8px;
+}
+
+footer {
+    background-color: #f56c20;
+    padding: 5px;
+}
+
+footer p {
+text-align: center;
+    font-size: 17px;
 }
 
 picture img {
@@ -41,6 +90,23 @@ picture img {
 
 
 
+}
+.menu a:hover{
+    color: darkred;
+    
+}
+#face {
+    width: 10%;
+}
+
+.billeder {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sb {
+    width: 100%;
+    margin-top: 10px;
 }
 
 
@@ -95,14 +161,32 @@ body {
     background-color: #f88804;
 }
 
-section {
-
+article {
+    padding: 10px;
     background-color: #f56c20;
+    margin-top: 50px;
 }
 
-#klatrer ul li {
+.forside {
+    text-align: center;
+}
+
+#mød li {
     list-style-type: none;
 }
+
+#traening li {
+    list-style-type: circle;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
 
 /*tablet*/
 
@@ -124,6 +208,42 @@ section {
         font-size: 60px;
         padding: 15px;
 
+    }
+    .start {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+    .headlines {
+        width: 50%;
+
+    }
+    .artikler {
+        width: 45%;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .forside {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+    #face {
+        width: 5%;
     }
 }
 
@@ -165,5 +285,30 @@ section {
         width: 40%;
         position: relative;
         left: 40%;
+    }
+    .start {
+        width: 25%;
+        margin-top: 5%;
+    }
+    .headlines {
+        width: 25%;
+
+    }
+    .billeder {
+        width: 70%;
+
+    }
+    .sb {
+        width: 30%;
+    }
+    .artikler {
+        justify-content: center;
+    }
+    .indledning {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
 }
